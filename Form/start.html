@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form action="get">
+        <fieldset>
+          <legend><b>Put here your informations:</b></legend>
+          <label for="usergeneralities">Put here your name and surname:</label>
+          <input type="text" id="usergeneralities" name="Username&surname" placeholder="Mario Rossi" required>
+          <label for="usermail">Put here your mail:</label>
+          <input type="email" id="usermail" name="userMail" placeholder="Your@bestmail.com" required>
+          <label for="psw">Create a strong password</label>
+          <input type="password" id="psw" name="Psw" maxlength="15" required>
+          <label for="birthday">Put here your date of birth:</label>
+          <input type="date" id="birthday" required>
+          <label for="telephone">Put here your cell number:</label>
+          <input type="tel" id="telephone" maxlength="10" placeholder="1234567890">
+        </fieldset>
+        <fieldset>
+          <legend><b>Now that all is set, begin your journey with us:</b></legend>
+          <label for="plans">Choose your favourite plan:</label>
+          <select name="choosePlans" id="plans" title="plans">
+            <option value="Free Plan">Free Plan</option>
+            <option value="Basic Plan">Basic Plan - 5.99$/mo</option>
+            <option value="Standard Plan">Standard Plan - 12.99$/mo</option>
+            <option value="Elite Plan">Elite Plan - 19.99$/mo</option>
+          </select>
+          <label for="proplan">I'm a pro so i'll chose this plan (29.99$/mo)</label>
+          <input type="checkbox" id="proplan" name="Proplan" required checked >
+        </fieldset>
+        <fieldset>
+          <legend><b>Now that you've chosen to stay with us, tell us:</b></legend>
+          <label for="creditcard">Put here your credit card number:</label>
+          <input type="tel" id="creditcard" name="creditCard" placeholder="#####" maxlength="14" required>
+          <label for="cvc">Insert the CVC code of your credit card:</label>
+          <input type="number" id="cvc" name="CVC" placeholder="123" required>
+          <label for="expirationdate">Put the expiration date of your card:</label>
+          <input type="date" id="expirationdate" name="Expiration" required>
+          <label for="billaddress">Put here your billing address:</label>
+          <input type="text" id="billaddress" name="Billaddress" placeholder="Via Monza 1, MI" required>
+        </fieldset>
+        <input type="submit" value="Submit"  />
+      </form>
+    </main>
+  </body>
+</html>
