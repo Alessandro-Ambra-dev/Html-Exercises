@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML Lesson</title>
+  </head>
+  <body>
+    <main>
+      <h1>Here's a simple form for you:</h1>
+      <h2>Hope you'll enjoy it!</h2>
+      <form action="get">
+        <fieldset>
+          <legend> <b>Tell something about yourself: </b></legend>
+          <label for="username">Put here your name & surname: </label>
+          <input type="text" name="userName" id="username" placeholder="Mario Rossi" required>
+          <label for="newdate">Select here your birthday:  </label>
+          <input type="date" name="Date" id="newdate" required>
+        </fieldset>
+        <fieldset>
+          <legend><b>Now tell us about our services:</b></legend>
+          <label for="rating"> How much did you like us?: </label>
+          <input type="number" id="rating" min="0" max="100" step="10" autofocus required >
+          <br>
+          <label for="probs">If you felt some disconfort please tell us:</label>
+          <textarea name="userProbs" id="probs" cols="20" rows="10" title="problems" placeholder="My issues are..." required></textarea>
+        </fieldset>
+        <fieldset>
+          <legend><b>Now the terms & conds:</b></legend>
+          <input type="checkbox" id="terms" name="terms" value="terms" checked required>
+          <label for="terms">I've read the terms and conditions and i accept</label>
+        </fieldset>
+        <input type="button" id="falsebutton" value="Submit" disabled>
+      </form>
+    </main>
+  </body>
+</html>
