@@ -44,10 +44,12 @@
         </fieldset>
         <fieldset>
           <legend><b>Now that you've chosen to stay with us, tell us:</b></legend>
-          <label for="creditcard">Put here your credit card number:</label>
-          <input type="tel" id="creditcard" name="creditCard" placeholder="#####" maxlength="14" required>
-          <label for="cvc">Insert the CVC code of your credit card:</label>
-          <input type="number" id="cvc" name="CVC" placeholder="123" required>
+          <label for="form-cc">Put here your credit card number:</label>
+          <!-- <input type="number" id="creditcard" name="creditCard" placeholder="#####" required pattern="[0-9]{13,16}"> -->
+          <input id="form-cc" name="cc" type="text" placeholder="XXXX XXXX XXXX XXXX" required maxlength="19" minlength="13" pattern="[0-9\s]{13,}"/>
+          <label for="form-cvc">Insert the CVC code of your credit card:</label>
+          <!-- <input type="text" id="cvc" name="CVC" placeholder="123" maxlength="3" required> -->
+          <input id="form-cvc" name="cvc" type="text" required minlength="3" maxlength="3" pattern="[0-9]{3,3}"/>
           <label for="expirationdate">Put the expiration date of your card:</label>
           <input type="date" id="expirationdate" name="Expiration" required>
           <label for="billaddress">Put here your billing address:</label>
